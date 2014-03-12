@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfInterceptoion.Server.Con
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfInterception.Server.Interception", "Server\WcfInterception.Server.Interception\WcfInterception.Server.Interception.csproj", "{C31999FB-AFF6-477B-A0B9-F123FCABA591}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfInterception.Server.Resolve", "Server\WcfInterception.Server.Resolve\WcfInterception.Server.Resolve.csproj", "{A3FE388A-C20F-4800-8E8B-DE208E672615}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +37,10 @@ Global
 		{C31999FB-AFF6-477B-A0B9-F123FCABA591}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C31999FB-AFF6-477B-A0B9-F123FCABA591}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C31999FB-AFF6-477B-A0B9-F123FCABA591}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3FE388A-C20F-4800-8E8B-DE208E672615}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3FE388A-C20F-4800-8E8B-DE208E672615}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3FE388A-C20F-4800-8E8B-DE208E672615}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3FE388A-C20F-4800-8E8B-DE208E672615}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -44,6 +50,7 @@ Global
 		{F7CEEEF4-0792-4C6C-9AD8-655201B795B5} = {F00BF8C0-BAEC-45A5-9BB4-658B6E4F327D}
 		{ABC745F3-B316-4178-9050-CCDE9FBBDB88} = {F00BF8C0-BAEC-45A5-9BB4-658B6E4F327D}
 		{C31999FB-AFF6-477B-A0B9-F123FCABA591} = {F00BF8C0-BAEC-45A5-9BB4-658B6E4F327D}
+		{A3FE388A-C20F-4800-8E8B-DE208E672615} = {F00BF8C0-BAEC-45A5-9BB4-658B6E4F327D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		EnterpriseLibraryConfigurationToolBinariesPath = packages\Unity.2.1.505.2\lib\NET35;packages\Unity.Interception.2.1.505.2\lib\NET35

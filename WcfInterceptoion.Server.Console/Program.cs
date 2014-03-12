@@ -8,6 +8,7 @@ using System.Text;
 using Microsoft.Practices.Unity;
 
 using WcfInterception.Server.Contracts;
+using WcfInterception.Server.Resolve;
 using WcfInterception.Server.Services;
 
 namespace WcfInterceptoion.Server.Console
@@ -17,8 +18,8 @@ namespace WcfInterceptoion.Server.Console
         static void Main(string[] args)
         {
 
-            var service = Bootstrapper.GetConfiguredContainer().Resolve<ICalculatorService>();
-            using (var host = new ServiceHost(service))
+            var container = Bootstrapper.GetConfiguredContainer();
+            using (var host = new UnityServiceHost(container, typeof(CalculatorService)))
             {
                 host.Open();
                 System.Console.ReadLine();
