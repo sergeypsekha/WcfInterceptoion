@@ -5,6 +5,8 @@ using System.ServiceModel;
 using System.ServiceModel.Description;
 using System.Text;
 
+using Microsoft.Practices.Unity;
+
 using WcfInterception.Server.Contracts;
 using WcfInterception.Server.Services;
 
@@ -14,7 +16,9 @@ namespace WcfInterceptoion.Server.Console
     {
         static void Main(string[] args)
         {
-            using (var host = new ServiceHost(typeof(CalculatorService)))
+
+            var service = Bootstrapper.GetConfiguredContainer().Resolve<ICalculatorService>();
+            using (var host = new ServiceHost(service))
             {
                 host.Open();
                 System.Console.ReadLine();
