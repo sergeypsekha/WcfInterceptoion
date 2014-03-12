@@ -9,6 +9,13 @@ namespace WcfInterception.Server.Services
 {
     public class CalculatorService : ICalculatorService
     {
+        public string Name { get; set; }
+
+        public CalculatorService()
+        {
+            this.Name = "Calculator";
+        }
+
         public int Add(int a, int b)
         {
             return a + b;
