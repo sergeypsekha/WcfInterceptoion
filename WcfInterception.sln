@@ -9,6 +9,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Server", "Server", "{F00BF8
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfInterception.Server.Contracts", "Server\WcfInterception.Server.Contracts\WcfInterception.Server.Contracts.csproj", "{197DF4C5-2D65-4027-8402-072287DCACE1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfInterception.Server.Services", "Server\WcfInterception.Server.Services\WcfInterception.Server.Services.csproj", "{F7CEEEF4-0792-4C6C-9AD8-655201B795B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfInterceptoion.Server.Console", "WcfInterceptoion.Server.Console\WcfInterceptoion.Server.Console.csproj", "{ABC745F3-B316-4178-9050-CCDE9FBBDB88}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,11 +27,21 @@ Global
 		{197DF4C5-2D65-4027-8402-072287DCACE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{197DF4C5-2D65-4027-8402-072287DCACE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{197DF4C5-2D65-4027-8402-072287DCACE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7CEEEF4-0792-4C6C-9AD8-655201B795B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7CEEEF4-0792-4C6C-9AD8-655201B795B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7CEEEF4-0792-4C6C-9AD8-655201B795B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7CEEEF4-0792-4C6C-9AD8-655201B795B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABC745F3-B316-4178-9050-CCDE9FBBDB88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABC745F3-B316-4178-9050-CCDE9FBBDB88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABC745F3-B316-4178-9050-CCDE9FBBDB88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABC745F3-B316-4178-9050-CCDE9FBBDB88}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{197DF4C5-2D65-4027-8402-072287DCACE1} = {F00BF8C0-BAEC-45A5-9BB4-658B6E4F327D}
+		{F7CEEEF4-0792-4C6C-9AD8-655201B795B5} = {F00BF8C0-BAEC-45A5-9BB4-658B6E4F327D}
+		{ABC745F3-B316-4178-9050-CCDE9FBBDB88} = {F00BF8C0-BAEC-45A5-9BB4-658B6E4F327D}
 	EndGlobalSection
 EndGlobal

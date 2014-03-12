@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{197DF4C5-2D65-4027-8402-072287DCACE1}</ProjectGuid>
+    <ProjectGuid>{F7CEEEF4-0792-4C6C-9AD8-655201B795B5}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>WcfInterception.Server.Contracts</RootNamespace>
-    <AssemblyName>WcfInterception.Server.Contracts</AssemblyName>
+    <RootNamespace>WcfInterception.Server.Services</RootNamespace>
+    <AssemblyName>WcfInterception.Server.Services</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -32,7 +32,6 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -40,8 +39,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ICalculatorService.cs" />
+    <Compile Include="CalculatorService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WcfInterception.Server.Contracts\WcfInterception.Server.Contracts.csproj">
+      <Project>{197DF4C5-2D65-4027-8402-072287DCACE1}</Project>
+      <Name>WcfInterception.Server.Contracts</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
